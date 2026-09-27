@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Immich to Gphoto Transfer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <div class="card">
+    <h1>Immich to Gphoto Transfer</h1>
+    <p>A private, self-hosted tool that keeps a second backup of a personal Immich photo library in the owner's own Google Photos account.
+       It runs only on the owner's home server and is used by its owner only.</p>
+
+    <h2>What it does with Google</h2>
+    <p>The tool asks for the <code>drive.file</code> permission for one purpose: to read the <strong>storage usage counter</strong>
+       of the signed-in Google account (Google Drive API, <code>about.get</code> → <code>storageQuota</code>).
+       It uses this number to warn its owner before the account runs out of storage.</p>
+    <ul>
+      <li>It does not read, list, download, modify or delete any photos, videos or Drive files.</li>
+      <li>It does not create files in Google Drive.</li>
+      <li>No data is sent to any third party.</li>
+    </ul>
+
+    <p><a href="privacy.html">Privacy policy</a></p>
+  </div>
+  <footer>Contact: denis.g30.04.1997@gmail.com</footer>
+</main>
+</body>
+</html>
